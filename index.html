@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>مرکز VIP ثبت‌نام | طراحی: آرمان یوسفی</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #121212;
+      color: #f1c40f;
+      direction: rtl;
+    }
+
+    header {
+      background: linear-gradient(to left, #f1c40f, #9b870c);
+      padding: 50px;
+      text-align: center;
+      font-size: 32px;
+      color: #000;
+      box-shadow: 0 0 25px #f1c40f;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .section {
+      padding: 30px;
+      border-bottom: 1px solid #f1c40f44;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .section:hover {
+      background-color: #1c1c1c;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px #f1c40f99;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .details {
+      display: none;
+      font-size: 16px;
+      color: #ccc;
+      animation: fadeInDetails 0.5s ease;
+    }
+
+    @keyframes fadeInDetails {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    .credit {
+      color: #f1c40f;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🚀 سایت ثبت‌نام VIP | طراحی توسط: آرمان یوسفی</header>
+
+  <div class="section" onclick="toggle('email')">
+    <div class="title">📧 ایمیل حرفه‌ای</div>
+    <div class="details" id="email">ساخت Gmail، Yahoo، Outlook، ایمیل دامنه‌دار با رمز دو مرحله‌ای و راهنمای امنیت.</div>
+  </div>
+
+  <div class="section" onclick="toggle('social')">
+    <div class="title">📱 شبکه‌های اجتماعی</div>
+    <div class="details" id="social">اکانت اینستاگرام، توییتر، واتساپ، تلگرام، لینکدین با آموزش ورود و حفظ امنیت.</div>
+  </div>
+
+  <div class="section" onclick="toggle('vehicle')">
+    <div class="title">🚗 خدمات خودرو</div>
+    <div class="details" id="vehicle">تعویض پلاک، نوبت مراکز، بیمه خودرو، استعلام خلافی و معاینه فنی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('gov')">
+    <div class="title">🏛️ سامانه‌های دولتی</div>
+    <div class="details" id="gov">ثنا، عدالت، مالیات، بیمه تأمین اجتماعی، کارت ملی، ثبت احوال و سامانه‌های رسمی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('education')">
+    <div class="title">🎓 آموزش و دانشگاه</div>
+    <div class="details" id="education">ثبت‌نام کنکور، سنجش، گلستان، آموزشیار، مدارس خاص، دوره‌های آنلاین و گواهی‌نامه‌ها.</div>
+  </div>
+
+  <div class="section" onclick="toggle('apps')">
+    <div class="title">📲 اپلیکیشن‌ها و سایت‌ها</div>
+    <div class="details" id="apps">اکانت دیجی‌کالا، اسنپ، نماوا، فیلیمو، شاد، آپ، و سامانه‌های فروشگاهی و خدماتی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('vpn')">
+    <div class="title">🛡️ سرویس VPN</div>
+    <div class="details" id="vpn">اشتراک‌های ۱ تا ۳ ماهه، نصب آسان، امنیت بالا، پشتیبانی اختصاصی و اتصال چنددستگاهی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('support')">
+    <div class="title">📞 ارتباط سریع</div>
+    <div class="details" id="support">تماس، پیامک، واتساپ، تلگرام با شماره: <strong>09930918404</strong> | پاسخ‌گویی شبانه‌روزی</div>
+  </div>
+
+  <footer>
+    © تمامی حقوق محفوظ است | طراحی توسط:  
+    <div class="credit">آرمان یوسفی 👨‍💻</div>
+  </footer>
+
+  <script>
+    function toggle(id) {
+      let el = document.getElementById(id);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
