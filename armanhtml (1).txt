@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سایت ثبت‌نام همه‌کاره | VIP</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #121212;
+      color: #f7d774;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to left, #f7d774, #a67c00);
+      color: #121212;
+      text-align: center;
+      padding: 40px;
+      font-size: 28px;
+      box-shadow: 0 0 20px gold;
+    }
+
+    .section {
+      padding: 30px;
+      border-bottom: 1px solid #f7d77488;
+      transition: all 0.4s ease;
+    }
+
+    .section:hover {
+      background-color: #1f1f1f;
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #f7d77455;
+    }
+
+    .title {
+      font-size: 22px;
+      color: #f7d774;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .details {
+      display: none;
+      font-size: 16px;
+      color: #ddd;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .contact {
+      background: #f7d774;
+      color: #121212;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 0 10px #f7d774;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🎯 مرکز ثبت‌نام آنلاین VIP | طلایی‌ترین تجربه خدماتی</header>
+
+  <div class="section" onclick="toggle('email')">
+    <div class="title">📧 ساخت ایمیل‌ها</div>
+    <div class="details" id="email">ایمیل Gmail، Yahoo، Outlook، ProtonMail، ساخت ایمیل شخصی دامنه‌دار با امنیت بالا و آموزش مدیریت.</div>
+  </div>
+
+  <div class="section" onclick="toggle('social')">
+    <div class="title">📱 ثبت‌نام در شبکه‌های اجتماعی</div>
+    <div class="details" id="social">ساخت حساب در اینستاگرام، واتساپ، تلگرام، توییتر، یوتیوب، و آموزش ایمن‌سازی حساب.</div>
+  </div>
+
+  <div class="section" onclick="toggle('car')">
+    <div class="title">🚗 خدمات خودرو</div>
+    <div class="details" id="car">ثبت‌نام خودرو، نوبت تعویض پلاک، استعلام خلافی، بیمه خودرو، رزرو معاینه فنی و مدارک رانندگی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('gov')">
+    <div class="title">🏛️ سامانه‌های دولتی</div>
+    <div class="details" id="gov">ورود و ثبت‌نام در مالیات، بیمه، ثنا، عدالت، ثبت‌نام کارت ملی، ثبت احوال، و خدمات دولتی ویژه.</div>
+  </div>
+
+  <div class="section" onclick="toggle('edu')">
+    <div class="title">🎓 ثبت‌نام‌های آموزشی</div>
+    <div class="details" id="edu">کنکور، آزمون سنجش، مدارس تیزهوشان، دانشگاه‌ها، گلستان، آموزشیار، دوره‌های آنلاین و گواهی‌نامه‌ها.</div>
+  </div>
+
+  <div class="section" onclick="toggle('apps')">
+    <div class="title">📲 ثبت‌نام در اپلیکیشن‌ها</div>
+    <div class="details" id="apps">ساخت حساب در اسنپ، دیجی‌کالا، شاد، آپ، فیلیمو، نماوا، اسپاتیفای، و فعال‌سازی سرویس‌ها.</div>
+  </div>
+
+  <div class="section" onclick="toggle('vpn')">
+    <div class="title">🛡️ VPN و خدمات امنیتی</div>
+    <div class="details" id="vpn">فروش VPN حرفه‌ای، نصب آسان، پشتیبانی سریع، قابلیت چند دستگاهی، راهنمای نصب تصویری.</div>
+  </div>
+
+  <div class="section" onclick="toggle('job')">
+    <div class="title">💼 ثبت‌نام استخدامی و کاری</div>
+    <div class="details" id="job">آزمون استخدامی آموزش و پرورش، شهرداری، بانک‌ها، ثبت‌نام در سایت‌های شغلی مثل کاربوم و ایران‌تلنت.</div>
+  </div>
+
+  <div class="section" onclick="toggle('health')">
+    <div class="title">🏥 خدمات مراجعه عمومی</div>
+    <div class="details" id="health">دریافت نوبت مراکز، ثبت‌نام در سامانه‌های عمومی خدمات، بدون اشاره به بیماری یا اصطلاحات پزشکی.</div>
+  </div>
+
+  <div class="section" onclick="toggle('contact')">
+    <div class="title">📞 ارتباط فوری</div>
+    <div class="details" id="contact">شماره مستقیم: 09930918404 — ارتباط از طریق واتساپ، تلگرام، پیامک | پاسخگویی سریع و دوستانه</div>
+  </div>
+
+  <div class="contact">
+    🚀 همین حالا شروع کن! | ثبت‌نام آسان، سریع، و VIP
+  </div>
+
+  <footer>
+    © تمامی حقوق محفوظ است | طراحی ویژه مشکی طلایی توسط Copilot 😎
+  </footer>
+
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
